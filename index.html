@@ -12,9 +12,11 @@
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
 		<link rel="stylesheet" href="reveal.js/css/reveal.min.css">
 		<!-- Pick solarized light theme -->
-		<link rel="stylesheet" href="reveal.js/css/theme/solarized_light.css" id="theme">
+		<link rel="stylesheet" href="reveal.js/css/theme/solarized.css" id="theme">
 
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="reveal.js/lib/css/solarized_light.css">
@@ -55,7 +57,7 @@
 				history: true,
 				center: false,
 				keyboard: true,
-				theme: 'solarized_light',
+				theme: 'solarized',
 				transition: 'linear',
 				mouseWheel: false,
 				width: 960,
@@ -64,7 +66,7 @@
 				// Optional libraries used to extend on reveal.js
 				dependencies: [
 					{ src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'reveal.js/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: 'reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: 'reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
